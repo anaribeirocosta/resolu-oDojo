@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: #ccc;
+}
+
+.chamamodal{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5%;
+    background-color: rgb(49, 143, 96);
+    cursor: pointer;
+}
+
+.chamamodal:hover {
+    width: 201px;
+    height: 51px;
+    background-color: rgba(49, 143, 96, 0.7);
+}
+
+#salas{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.novasala{
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    margin: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+.novasalareservada{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(236, 122, 122);
+    margin: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+.novasalareservada h2, .novasalareservada p{
+    font-size: 15pt;
+    color: #545454;
+}
+
+.novasala h2, .novasala p{
+    font-size: 15pt;
+    color: #000000;
+}
+
+.maemodal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.664)
+}
+
+.modal {
+    width: 50vw;
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.ativamodal {
+    width: 50vw;
+    height: 25vw;
+    display: flex;
+    /* flex-direction: column; */
+    position: fixed;
+    background: indigo;
+    justify-content: center;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    align-items: center;
+    transform: translateY(700px); 
+    transition: 2s;
+}
+
+.modal input, .modal button {
+    width:40%;
+    height:10%;
+}
+
